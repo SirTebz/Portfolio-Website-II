@@ -4,22 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Teboho Mokgosi - Software Developer Portfolio">
-    <meta property="og:description" content="Explore my Services, skills, and experiences in web development.">
+    <meta property="og:title" content="Teboho Mokgosi - Junior IT Technician | IT Support & Systems Infrastructure">
+    <meta property="og:description" content="IT support and infrastructure professional experienced in software development, technical troubleshooting, systems administration, networking and security systems.">
 
-    <title>Teboho Mokgosi</title>
-    <!-- UNICONS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Add favicon -->
+    <title>Teboho Mokgosi | Software Engineer | IT Support & Systems Infrastructure</title>
+    <script>
+        (function(){
+            var saved = localStorage.getItem('theme');
+            var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- --------------- HEADER --------------- -->
         <nav id="header">
             <div class="nav-logo">
                 <p class="nav-name">Teboho</p>
@@ -36,7 +40,15 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-                        <a href="#Services" class="nav-link">Services</a>
+                        <a href="#services" class="nav-link">Services</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -46,17 +58,20 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn"><a href="https://sirtebz.github.io/Single-Page-CV/" target="_blank" rel="noopener noreferrer"> Resume <i class="uil uil-file-alt"></i></a></button>
+                <button class="btn"><a href="https://sirtebz.github.io/Cv-TM_Dev/" target="_blank" rel="noopener noreferrer"> Resume <i class="fa-solid fa-file-lines"></i></a></button>
             </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <span class="toggle-dot"></span>
+            </button>
             <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
             </div>
         </nav>
 
 
-        <!-- -------------- MAIN ---------------- -->
         <main class="wrapper">
-            <!-- -------------- FEATURED ---------------- -->
             <section class="featured-box" id="home">
                 <div class="featured-text">
                     <div class="featured-text-card">
@@ -67,43 +82,59 @@
                     </div>
                     <div class="featured-text-info">
                         <p>
-                            I'm a technically proficient IT professional with expertise in Software Development,
-                            System Administration, and End-user Technical Support. I'm passionate about building
-                            efficient solutions, solving technical problems and ensuring optimal system performance.
+                            I'm a detail-oriented IT professional with a BSc in Information Technology and over 2 years of experience across IT support, systems administration and hands-on infrastructure work. I troubleshoot hardware, software and network issues, support Microsoft Windows and MacOS environments and configure network-connected devices - backed by a solid foundation in software development and data analysis.
                         </p>
                     </div>
+
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn"><a href="#contact">Let's Connect <i
-                                    class="uil uil-message"></i></a></button>
-                        <button class="btn"><a href="https://sirtebz.github.io/Single-Page-CV/" target="_blank" rel="noopener noreferrer"> Resume <i class="uil uil-file-alt"></i></a></button>
+                        <button class="btn blue-btn"><a href="#contact">Let's Connect <i class="fa-solid fa-message"></i></a></button>
+                        <button class="btn"><a href="https://sirtebz.github.io/Cv-TM_Dev/" target="_blank" rel="noopener noreferrer"> Resume <i class="fa-solid fa-file-lines"></i></a></button>
                     </div>
+
                     <div class="social_icons">
-                        <div class="icon"><a href="https://www.instagram.com/sir_tebz" target="_blank"
-                                rel="noopener noreferrer"><i class="uil uil-instagram"></i></a></div>
-                        <div class="icon"><a href="https://www.linkedin.com/in/teboho-mokgosi/" target="_blank"
-                                rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></div>
-                        <div class="icon"><a href="https://www.x.com/sir_tebz" target="_blank"
-                                rel="noopener noreferrer"><i class="uil uil-twitter"></i></a></div>
-                        <div class="icon"><a href="https://www.github.com/SirTebz" target="_blank"
-                                rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></div>
-                        <div class="icon"><a href="https://paypal.me/Tebz9808" target="_blank"
-                                rel="noopener noreferrer"><i class="uil uil-paypal"></i></a></div>
+                        <div class="icon"><a href="https://www.instagram.com/sir_tebz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/teboho-mokgosi/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div class="icon"><a href="https://www.x.com/sir_tebz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></div>
+                        <div class="icon"><a href="https://www.github.com/SirTebz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></div>
+                        <div class="icon"><a href="https://paypal.me/Tebz9808" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-paypal"></i></a></div>
                     </div>
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="images/header1.jpg" alt="Teboho Mokgosi Software Developer Portfolio Avatar">
+                        <div class="code-panel" aria-hidden="true">
+                            <div class="code-panel-bar">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                <span class="code-panel-title">teboho@dev:~</span>
+                            </div>
+                            <div class="code-panel-body">
+                                <svg class="code-lines" viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="ln ln1 accent" x="16" y="20" width="70" height="8" rx="4"/>
+                                    <rect class="ln ln2" x="34" y="40" width="150" height="8" rx="4"/>
+                                    <rect class="ln ln3" x="34" y="60" width="110" height="8" rx="4"/>
+                                    <rect class="ln ln4 accent" x="16" y="80" width="55" height="8" rx="4"/>
+                                    <rect class="ln ln5" x="34" y="100" width="165" height="8" rx="4"/>
+                                    <rect class="ln ln6" x="34" y="120" width="95" height="8" rx="4"/>
+                                    <rect class="ln ln7 accent" x="16" y="140" width="48" height="8" rx="4"/>
+                                    <rect class="cursor" x="68" y="140" width="3" height="9"/>
+
+                                    <path class="net-line" d="M40 178 H150 V196 H240"/>
+                                    <circle class="node node-a" cx="40" cy="178" r="5"/>
+                                    <circle class="node node-b node-pulse" cx="150" cy="178" r="5"/>
+                                    <circle class="node node-c node-pulse" cx="150" cy="196" r="5"/>
+                                    <circle class="node node-d node-pulse" cx="240" cy="196" r="6"/>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="scroll-icon-box">
                     <a href="#about" class="scroll-btn">
-                        <i class="uil uil-mouse-alt"></i>
+                        <i class="fa-solid fa-computer-mouse"></i>
                         <p>Scroll Down</p>
                     </a>
                 </div>
 
             </section>
-            <!-- -------------- ABOUT ME ---------------- -->
             <section class="section" id="about">
                 <div class="top-header">
                     <h1>About Me</h1>
@@ -111,115 +142,198 @@
                 <div class="row">
                     <div class="col">
                         <div class="about-info">
-                            <h3>My introduction</h3>
-                            <p>
-                                I'm a passionate IT Professional with a Bachelor's degree in IT (Computer Science),
-                                bringing both Software Development and Technical Support capabilities.
-                            </p>
-                            <p>
-                                I thrive in structured, collaborative environments and I'm well-versed in SDLC and Agile
-                                practices. My unique skill set allows me to not only build high-quality web applications
-                                but also provide excellent end-user support and manage system infrastructure.
-                            </p>
-                            <p>
-                                Thanks for stopping by! Let's connect.
-                            </p>
-                            <div class="about-btn">
-                                <button class="btn"><a href="https://sirtebz.github.io/Single-Page-CV/" target="_blank" rel="noopener noreferrer"> Resume <i class="uil uil-file-alt"></i></a></button>
-                            </div>
+                        <h3>My introduction</h3>
+                        <p>
+                            I'm a detail-oriented IT professional with a Bachelor of Science in Information Technology (Computer Science and Business Management) and over 2 years of experience across IT support, systems administration, technical troubleshooting and hands-on infrastructure.
+                        </p>
+                        <p>
+                            I provide Level 1 and Level 2 technical support, troubleshoot hardware, software and network issues, manage user accounts and permissions, and configure network-connected devices — with hands-on experience in Active Directory, Microsoft 365, Google Workspace and LAN/Wi-Fi troubleshooting. Currently expanding and gaining practical experience with access control systems, CCTV and network-connected security infrastructure.
+                        </p>
+                        <p>
+                            Alongside this, I have a solid foundation in software development and data analysis. I'm a reliable, adaptable problem-solver who enjoys supporting users and contributing to improvements in IT operations. Let's connect.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn"><a href="https://sirtebz.github.io/Cv-TM_Dev/" target="_blank" rel="noopener noreferrer"> Resume <i class="fa-solid fa-file-lines"></i></a></button>
                         </div>
+                    </div>
                     </div>
                     <div class="col">
                         <div class="skills-box">
                             <div class="skills-header">
-                                <h3>Technical Skills</h3>
+                                <h3>Programming & Development</h3>
                             </div>
-                            <div class="skills-list">
-                                <span>HTML & CSS</span>
-                                <span>Bootstrap</span>
-                                <span>JavaScript</span>
-                                <span>C# & ASP.NET Core</span>
+                            <div class="skills-list" id="other-skills">
+                                <span>C#</span>
+                                <span>ASP.NET Core</span>
                                 <span>SQL Server</span>
-                                <span>Microsoft Power Platform</span>
-                                <span>Windows 10/11 & Linux</span>
-                                <span>Active Directory & User Management</span>
-                                <span>SharePoint Content Management</span>
-                                <span>Hardware Diagnostics & Troubleshooting</span>
-                                <span>Microsoft 365 Administration</span>
-                            </div>
-                        </div>
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Frameworks & Methodologies</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>Object-Oriented Programming (OOP)</span>
-                                <span>Software Development Lifecycle (SDLC)</span>
-                                <span>Agile Methodologies</span>
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>Azure</span>
+                                <span>Database Design</span>
+                                <span>Git & GitHub</span>
+                                <span>SDLC</span>
                                 <span>MVC Architecture</span>
-                                <span>Minimal APIs</span>
-                                <span>Version Control</span>
                             </div>
                         </div>
                         <div class="skills-box">
                             <div class="skills-header">
-                                <h3>Tools</h3>
+                                <h3>IT Support & Service Desk</h3>
+                            </div>
+                            <div class="skills-list" id="technical-skills">
+                                <span>Level 1 & 2 Technical Support</span>
+                                <span>End-User Support</span>
+                                <span>Incident Troubleshooting</span>
+                                <span>Hardware & Software Troubleshooting</span>
+                                <span>Root Cause Analysis</span>
+                                <span>Remote & On-Site Support</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Systems Administration</h3>
                             </div>
                             <div class="skills-list">
-                                <span>Visual Studio / VS Code</span>
-                                <span>SQL Server Management Studio (SSMS)</span>
-                                <span>Ticketing Systems</span>
-                                <span>Remote Desktop Tools</span>
+                                <span>Windows 10/11</span>
+                                <span>MacOS</span>
+                                <span>Active Directory</span>
+                                <span>Microsoft 365</span>
+                                <span>Google Workspace</span>
+                                <span>User Onboarding & Access Mgmt</span>
                             </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Networking & Infrastructure</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>TCP/IP</span>
+                                <span>DNS & DHCP</span>
+                                <span>IP Addressing & Subnetting</span>
+                                <span>LAN/WAN & Wi-Fi Troubleshooting</span>
+                                <span>Structured Cabling</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Security & Hardware</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Access Control Systems</span>
+                                <span>CCTVs & NVR</span>
+                                <span>Hardware Installation</span>
+                                <span>Preventative Maintenance</span>
+                                <span>Low-Voltage Infrastructure</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+                <div class="top-header">
+                    <h1>Services</h1>
+                    <p>How I Can Add Value</p>
+                </div>
+                <div class="services-container">
+                    <div class="service-box">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h3>Software Development</h3>
+                        <button class="btn" type="button" data-service="software" aria-haspopup="dialog" aria-label="Read more about Software Development">...</button>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Technical Support</h3>
+                        <button class="btn" type="button" data-service="support" aria-haspopup="dialog" aria-label="Read more about Technical Support">...</button>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Business Process Solutions</h3>
+                        <button class="btn" type="button" data-service="business" aria-haspopup="dialog" aria-label="Read more about Business Process Solutions">...</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="experience">
+                <div class="top-header">
+                    <h1>Experience</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="exp-box">
+                            <div class="exp-box-head">
+                                <h3>Junior Technician - YES4YOUTH</h3>
+                                <span class="exp-dates">Jun 2026 — Present</span>
+                            </div>
+                            <p class="exp-org">FS Systems · Bloemfontein, South Africa</p>
+                            <ul class="exp-list">
+                                <li>Assist with installation, configuration and commissioning of IT-connected physical security systems and infrastructure.</li>
+                                <li>Configure network-connected devices, including IP addressing, device naming and connectivity verification.</li>
+                                <li>Troubleshoot offline CCTV cameras by investigating network connectivity, power, cabling and hardware faults.</li>
+                                <li>Install and configure Avigilon IP CCTV cameras and Impro Technologies access control controllers and readers.</li>
+                                <li>Perform preventative maintenance, equipment inspections and system health checks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="exp-box">
+                            <div class="exp-box-head">
+                                <h3>Applications Development &amp; Support Intern</h3>
+                                <span class="exp-dates">Dec 2023 — Dec 2025</span>
+                            </div>
+                            <p class="exp-org">Dept. of Higher Education &amp; Training · Pretoria, South Africa</p>
+                            <ul class="exp-list">
+                                <li>Provided Level 1 and Level 2 technical and application support, investigating incidents through to resolution.</li>
+                                <li>Supported user onboarding and access management through Active Directory and internal systems.</li>
+                                <li>Troubleshot LAN, Wi-Fi and VPN connectivity issues and supported Microsoft 365 and Google Workspace users.</li>
+                                <li>Developed and maintained internal applications using C#, ASP.NET Core and JavaScript following SDLC practices.</li>
+                                <li>Managed SQL Server databases and used Power Automate to streamline internal processes.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- -------------- Services ---------------- -->
-            <section class="section" id="Services">
+            <section class="section" id="projects">
                 <div class="top-header">
-                    <h1>Services</h1>
-                    <p>How I Can Add Value</p>
+                    <h1>Portfolio Projects</h1>
+                    <p>A selection of full-stack applications built alongside my IT support work</p>
                 </div>
                 <div class="project-container">
-                    <!-- Card 1 -->
                     <div class="project-box">
-                        <i class="uil uil-code-branch"></i>
-                        <h3>Software Development</h3>
-                        <div>
-                            <button
-                                onclick="showPopup('Software Development', 'Design, development, and maintenance of scalable web applications using modern technologies like ASP.NET Core, JavaScript and SQL. From requirements gathering to deployment and support, I ensure reliable and user-friendly solutions.')"
-                                class="btn bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
-                                ...
-                            </button>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <h3>Airline Reservation System</h3>
+                        <!-- <p class="tech-stack-label">C#, ASP.NET Core MVC, SQL Server, EF Core</p> -->
+                        <p class="project-description">A web-based reservation system supporting flight searches, seat availability and bookings, with secure authentication, role-based access and an admin management module.</p>
+                        <div class="project-links">
+                            <!-- <button class="btn"><a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button> -->
+                             <button class="btn"><a href="https://github.com/SirTebz/AirlineReservationSystem_MVC" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
                         </div>
                     </div>
+                    
                     <div class="project-box">
-                        <i class="uil uil-processor"></i>
-                        <h3>Technical Support</h3>
-                        <div>
-                            <button
-                                onclick="showPopup('Technical Support & System Administration', 'Provide Level 1 & 2 technical support, diagnosing hardware and software issues, and performing system maintenance, ensuring optimal day-to-day IT operations.')"
-                                class="btn bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
-                                ...
-                            </button>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <i class="uil uil-brain"></i>
-                        <h3>Business Process Solutions</h3>
-                        <div>
-                            <button
-                                onclick="showPopup('Business Process Automation & Solutions', 'Leveraging the Microsoft Power Platform and SharePoint to create automated workflows, build business tools, and manage digital content. I help implement new technologies to improve organizational efficiency and workflows.')"
-                                class="btn bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
-                                ...
-                            </button>
+                        <i class="fa-solid fa-table-columns"></i>
+                        <h3>Community Dashboard</h3>
+                        <!-- <p class="tech-stack-label">React, Tailwind CSS, TypeScript (TS), Vite</p> -->
+                        <p class="project-description">A multi-user application with secure authentication and role-based access control, letting admins manage community posts, comments and announcements.</p>
+                        <div class="project-links">
+                            <button class="btn"><a href="https://github.com/SirTebz/CommunityNoticeboard" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
                         </div>
                     </div>
 
-                    <!-- The Modal/Pop-up -->
-                    <div id="modalOverlay" class="modal-overlay">
+                    <div class="project-box">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <h3>Personal Finance Tracker</h3>
+                        <!-- <p class="tech-stack-label">HTML, CSS, JavaScript (JS)</p> -->
+                        <p class="project-description">A user-focused finance tracking application with secure authentication and dynamic data visualisation and filtering for income and expenditure.</p>
+                        <div class="project-links">
+                            <button class="btn"><a href="https://github.com/SirTebz/PersonalFinanceTracker_MVC" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    
+                    <div id="modalOverlay" class="modal-overlay" style="display: none;">
                         <div id="modalContent" class="modal-content">
                             <h2 id="modalTitle" class="text-2xl font-bold text-gray-800 mb-4"></h2>
                             <p id="modalMessage" class="text-gray-600 mb-6"></p>
@@ -233,11 +347,9 @@
             </section>
             <div class="project-button">
                 <button class="btn"><a href="https://www.github.com/SirTebz" target="_blank" rel="noopener noreferrer">
-                        Check Out My GitHub <i class="uil uil-github-alt"></i></a></button>
+                        Check Out My GitHub<i class="fa-brands fa-github"></i></a></button>
             </div>
 
-
-            <!-- -------------- CONTACT BOX ---------------- -->
 
             <section class="section" id="contact">
                 <div class="top-header">
@@ -247,14 +359,23 @@
                 <div class="row">
                     <div class="col">
                         <div class="contact-info">
-                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><a href="mailto:mokgositeboho77@gmail.com" target="_blank" rel="noopener noreferrer"
-                                    style="color: inherit; text-decoration: none;"><i class="uil uil-envelope"></i>
-                                    mokgositeboho77@gmail.com</a></p>
-                            <!-- <p><i class="uil uil-phone"></i> +27123456789</p> -->
+                            <h2>Find Me</h2>
+                            <p>
+                                <a href="mailto:mokgositeboho77@gmail.com" target="_blank" rel="noopener noreferrer"
+                                    style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope"></i>
+                                    mokgositeboho77@gmail.com
+                                </a>
+                            </p>
+                            <!-- <p>
+                                <a href="tel:+27722389325" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-phone"></i>
+                                    072 238 9325
+                                </a>
+                            </p>
+                            <p><i class="fa-solid fa-location-dot"></i>South Africa</p> -->
                         </div>
                     </div>
 
+                    
                     <!-- <div class="col">
                         <form class="form-control" action="https://formsubmit.co/mokgositeboho77@gmail.com" method="POST" id="contactForm">
                             <div class="form-inputs">
@@ -270,7 +391,7 @@
 
                             <input type="hidden" name="_next" value="http://127.0.0.1:5500">
                             <div class="form-button">
-                                <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                                <button class="btn" type="submit">Send <i class="fa-solid fa-message"></i></button>
                             </div>
                         </form>
                     </div>
@@ -288,20 +409,18 @@
             </section>
         </main>
 
-        <!-- --------------- FOOTER --------------- -->
         <footer>
             <div class="footer-social-icons">
                 <div class="icon"><a href="https://www.instagram.com/sir_tebz" target="_blank"
-                        rel="noopener noreferrer"><i class="uil uil-instagram"></i></a></div>
+                        rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></div>
                 <div class="icon"><a href="https://www.linkedin.com/in/teboho-mokgosi/" target="_blank"
-                        rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></div>
-                <!-- <div class="icon"><a href="https://www.twitter.com/sir_tebz" target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter"></i></a></div> -->
+                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a></div>
                 <div class="icon"><a href="https://www.x.com/sir_tebz" target="_blank" rel="noopener noreferrer"><i
-                            class="uil uil-twitter"></i></a></div>
+                            class="fa-brands fa-x-twitter"></i></a></div>
                 <div class="icon"><a href="https://www.github.com/SirTebz" target="_blank" rel="noopener noreferrer"><i
-                            class="uil uil-github-alt"></i></a></div>
+                            class="fa-brands fa-github"></i></a></div>
                 <div class="icon"><a href="https://paypal.me/Tebz9808" target="_blank" rel="noopener noreferrer"><i
-                            class="uil uil-paypal"></i></a></div>
+                            class="fa-brands fa-paypal"></i></a></div>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none; color: inherit;">Teboho Mokgosi</a> -
@@ -310,16 +429,21 @@
         </footer>
 
     </div>
-    <!-- ----- TYPING JS Link ----- -->
+    <!-- Services pop-up -->
+    <div id="serviceModalOverlay" class="service-modal-overlay">
+        <div id="serviceModal" class="service-modal" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+            <h2 id="serviceModalTitle"></h2>
+            <p id="serviceModalText"></p>
+            <button type="button" class="btn" id="serviceModalClose">Close</button>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- ----- MAIN JS ----- -->
-    <script src="js/script.js"></script>
+     <script src="js/script.js"></script>
 </body>
 
+
 </html>
-
-
